@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nintendo Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Nintendo Survey Form</h1>
+            <p id="description">Thank you for provding ur opinion!</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+
+                <label for="dropdown" id="dropdown-text">Select Your Favorite Nintendo Console</label>
+                <select id="dropdown" name="favorite-nintendo-console">
+                    <option value="" disabled selected>Select an Console</option>
+                    <option value="nes">NES</option>
+                    <option value="game boy">Game Boy</option>
+                    <option value="snes">SNES</option>
+                    <option value="n64">N64</option>
+                    <option value="gba">GBA</option>
+                    <option value="nintendo ds">Nintendo DS</option>
+                    <option value="wii">Wii</option>
+                    <option value="nintendo 3ds">Nintendo 3DS</option>
+                    <option value="nintendo switch">Nintendo Switch</option>
+                    <option value="game boy color">Game Boy Color</option>
+                </select>
+
+                <fieldset id="radio-questions">
+                    <legend>Do you have fond memories of playing multiplayer games with friends or family on a Nintendo console?</legend>
+                    <label>Yes<input type="radio" name="question1" value="yes"></label>
+                    <label>No<input type="radio" name="question1" value="no"></label>
+                    
+                </fieldset>
+
+                <fieldset id="radio-questions">
+                    <legend>Did you grow up playing Nintendo games like Super Mario or The Legend of Zelda?</legend>
+                    <label>Yes<input type="radio" name="question2" value="yes"></label>
+                    <label>No<input type="radio" name="question2" value="no"></label>
+                </fieldset>
+                
+                <fieldset id="checkbox-container">
+                    <label id="checkbox-questions" class="checkbox-question-first">
+                        Did you play any of the classic Nintendo franchises, such as Mario, Zelda, or Pokémon?
+                        <input type="checkbox" value="classic-franchises">
+                    </label>
+                    <label id="checkbox-questions">
+                        Have you ever attended a Nintendo-themed event, such as a Nintendo Direct presentation or a gaming convention featuring Nintendo games?
+                        <input type="checkbox" value="nintendo-events">
+                    </label>
+                    <label id="checkbox-questions">
+                        Do you own any Nintendo consoles, such as the Nintendo Switch, Nintendo 3DS, or older systems like the NES or SNES?
+                        <input type="checkbox" value="own-consoles">
+                    </label>
+                    <label id="checkbox-questions">
+                        Have you purchased or played any Nintendo games in the past year?
+                        <input type="checkbox" value="played-games">
+                    </label>
+                    <label id="checkbox-questions">
+                        Do you follow Nintendo news or updates regularly through websites, social media, or other channels?
+                        <input type="checkbox" value="follow-news">
+                    </label> 
+                </fieldset>
+                
+                <label for="comments" id="comment-question">What game from Nintendo would you like to see next?</label>
+                <textarea id="comments" name="comments" placeholder="Enter your answer here"></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+    </html>
