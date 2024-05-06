@@ -17,3 +17,5 @@ This form is a fun way for fellow Nintendo enthusiasts to reflect on their exper
 ### Ready to Start?
 
 Just open `index.html` in your browser and enjoy filling out the survey. It’s quick, easy, and a great way to reminisce about the joys of Nintendo gaming.
+
+![Nintendo Logo](nintendo%20logo.png)
